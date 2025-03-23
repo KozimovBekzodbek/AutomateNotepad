@@ -11,7 +11,7 @@ venv_python = os.path.join(base_dir, "venv", "Scripts", "python.exe")
 
 script_path = os.path.join(base_dir, "auto.py")
 
-command = f'schtasks /create /tn "{task_name}" /tr "cmd.exe /c cd /d {base_dir} && {venv_python} {script_path}" /sc daily /st 20:27 /f'
+command = f'schtasks /create /tn "{task_name}" /tr "cmd.exe /c cd /d {base_dir} && {venv_python} {script_path}" /sc daily /st 10:10 /f'
 
 
 
